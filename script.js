@@ -13,3 +13,24 @@ Consigli del giorno
 Scriviamo sempre in italiano i passaggi che vogliamo fare
 Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti. */
 
+/* console.log('works')
+ */
+const parola1 = prompt('inserisci qui')
+
+function ispalyndrome(parola1){
+    //trasformo stringa in array
+    const arrayParola = parola1.split('')
+    console.log(arrayParola)
+    //inverto ordine array
+    const arrayInverso = arrayParola.reverse()
+    console.log(arrayInverso)
+    //trasformo array invertito in stringa di nuovo
+    
+    const parolaInversa = arrayInverso.join('')
+    console.log(parolaInversa)
+
+
+
+}
+
+ispalyndrome(parola1)
