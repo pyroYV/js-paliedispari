@@ -10,17 +10,33 @@
 
 
 function rng(){
-    return Math.floor(Math.random()*4 +1)
+    return Math.floor(Math.random()*5 +1)
 } 
+
+function isparyyyy(input){
+    return input % 2 == 0 
+}
+
+function scriviH1(testo){
+    document.querySelector('h1').innerHTML = testo
+}
+
 const ispari = prompt('inserisci pari o dispari')
 const userNumber = parseInt(prompt('inserisci un numero da 1 a 5'))
 const randomNumber = rng()
+const somma = randomNumber + userNumber
+console.log({somma,userNumber,randomNumber})
 
-if (randomNumber !== userNumber) {
-    console.log(`rng ha scelto ${randomNumber}`)
-    console.log('non uguali numeri')
-}   else {
-    console.log('uguali numeri')
-    console.log(`rng ha scelto ${randomNumber}`)
-
+//se l'inpunt è un numero o non un numero o superiore a cinque
+if (isNaN(ispari) || !isNaN(userNumber) || userNumber > 5 || userNumber <= 0){
+    alert('ricarica la pagina scemo')
+} else if (isparyyyy(somma) && (ispari =='pari')) {
+    scriviH1('Hai vinto')
+}   else if (!isparyyyy(somma) && (ispari == 'dispari')){
+    scriviH1('Hai vinto')
+} else{
+    scriviH1('Hai perso')
+ 
 }
+
+
