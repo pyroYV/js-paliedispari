@@ -27,8 +27,8 @@ const randomNumber = rng()
 const somma = randomNumber + userNumber
 console.log({somma,userNumber,randomNumber})
 
-//se l'inpunt è un numero o non un numero o superiore a cinque
-if (isNaN(ispari) || !isNaN(userNumber) || userNumber > 5 || userNumber <= 0){
+//se l'input "pari o dispari" è un numero o il numero di input non un numero o superiore a cinque o inferiore allo 0
+if (!isNaN(ispari) || isNaN(userNumber) || userNumber > 5 || userNumber < 1){
     alert('ricarica la pagina scemo')
 } else if (isparyyyy(somma) && (ispari =='pari')) {
     scriviH1('Hai vinto')
