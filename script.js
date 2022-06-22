@@ -30,3 +30,17 @@ function ispalyndrome(parola1){
 
 ispalyndrome(parola1)
 
+
+function ispalyndromeNoArray(stringa){
+
+    let newString =''
+
+    for (let index = stringa.length -1; index >= 0 ; index--) {
+        newString += stringa[index]
+        console.log(newString)
+        
+    } return newString
+}
+
+let stringaInvertita = ispalyndromeNoArray('supercalifragilisticherspiralidoso')
+console.log(stringaInvertita)
